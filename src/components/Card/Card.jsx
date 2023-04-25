@@ -8,7 +8,7 @@ import background from '../../images/background.png';
 import { CardItem } from '../CardItem/CardItem.jsx';
 
 export const Card = () => {
-  const [usersData, setUsersData] = useState(users);
+  const [usersData] = useState(users);
   const [followers, setFollowers] = useState(
     usersData.map(el => {
       return { id: el.id, followers: el.followers };
